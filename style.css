@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar  */
+.main-nav {
+    display: flex;
+    justify-content: center; /* Centers the navbar itself */
+    align-items: center;    /* Vertically centers the items */
+    height: 60px;
+    background-color: black;
+    /* background-color: #222; Optional: Navbar background */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distributes items with space between them */
+    width: 80%; /* Controls the total width of the navbar */
+    font-size: 20px;
+    font-family: "Doto";
+}
+.main{
+    font-family: "Faculty Glyphic";
+    font-size: 1.6rem;
+}
+.navbar a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff; /* White text */
+    padding: 10px 15px; /* Adds clickable padding around links */
+    transition: color 0.3s, background-color 0.3s; /* Smooth hover effect */
+}
+.navbar a:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hero section  */
+
+
+#hero-section {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+}
+
+.heroh {
+    font-family: "Faculty Glyphic";
+    color: white;
+    text-align: left;
+}
+
+
+.herop {
+    background-image: url('image1.jpg'); 
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    border-radius: 10px; 
+}
+
+/* about section  */
+
+#about-section{
+    background-color: black;
+    color: #b3b3b3;
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-evenly;
+}
+.about-me{
+    height: 300px;
+    width: 300px;
+}
+.intrests{
+    height: 300px;
+    width: 300px;
+}
+.aspirations{
+    height: 300px;
+    width: 300px;
+}
+.about-h{
+    text-align: center;
+}
+.about-p{
+    padding-top: 40px;
+    color: grey;
+    line-height: 1.8;
+    text-align: left;
+}
+#about-section div:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* resume section  */
+
+/* Contact section  */
+
+#contact-section{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact-section div i{
+    filter: invert(1);
+}
+.insta{
+    height: 50px;
+    display: flex;
+}
+.linkedin{
+    height: 50px;
+    display: flex;
+}
+.whatsapp{
+    height: 50px;
+    display: flex;
+}
+.email{
+    height: 50px;
+    display: flex;
+}
+
+#contact-section a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+/* footer */
+
+footer{
+    background-color: rgb(72, 72, 72);
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    height: 50px;
+}
+.footer{
+    padding: 15px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* .navbar {
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;    /* Center the links */
+    }
+    
+    .navbar a {
+        padding: 10px 0;  /* Add vertical spacing */
+        font-size: 18px;  /* Adjust font size for smaller screens */
+    }
+    
+
+    #hero-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .herop {
+        height: 300px;
+        width: 300px;
+    }
+
+    #about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-section div {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #contact-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        font-size: 12px;
+    }
+}
