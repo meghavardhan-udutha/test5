@@ -69,31 +69,9 @@
     border-radius: 10px; 
 }
 
-.typing-effect {
-    font-family: "Faculty Glyphic";
-    color: white;
-    white-space: nowrap; /* Prevents text from wrapping */
-    overflow: hidden;    /* Hides the text that hasn't "typed" yet */
-    width: 0;            /* Initial width of the text */
-    border-right: 2px solid white; /* Cursor effect */
-    animation: typing 1.5s steps(13) forwards, blink 0.5s step-end infinite;
-}
-
-/* Keyframes for the typing effect */
-@keyframes typing {
-    from {
-        width: 0; /* Start with no text visible */
-    }
-    to {
-        width: 13ch; /* Full width of "MEGHAVARDHAN" */
-    }
-}
-
-/* Keyframes for the blinking cursor */
-@keyframes blink {
-    50% {
-        border-color: transparent; /* Cursor blinks off */
-    }
+.name{
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 
