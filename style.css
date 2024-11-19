@@ -41,6 +41,31 @@
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
+.up {
+    height: 50px; /* Adjust height */
+    width: 50px; /* Adjust width */
+    background-color: transparent; /* Ensure visibility of the button */
+    position: fixed;
+    bottom: 20px; /* Position at the bottom */
+    right: 20px; /* Position at the right */
+    display: flex; /* Center align icon */
+    justify-content: center; 
+    align-items: center; 
+    border: none;
+    cursor: pointer; /* Add a pointer cursor */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.up i {
+    font-size: 20px; /* Adjust icon size */
+    color: white; /* Ensure icon is visible */
+    filter: invert(0); /* Reset any unwanted color changes */
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.up:hover i {
+    transform: scale(1.2); /* Enlarge icon on hover */
+}
 
 /* Hero section  */
 
