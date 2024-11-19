@@ -110,7 +110,7 @@
     transition: transform 0.3s ease-in-out;
 }
 
-/* resume section  */
+/* project section  */
 
 /* Contact section  */
 
@@ -128,6 +128,10 @@
     display: flex;
 }
 .linkedin{
+    height: 50px;
+    display: flex;
+}
+.resume{
     height: 50px;
     display: flex;
 }
@@ -159,53 +163,3 @@ footer{
     padding: 15px;
 }
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-    /* .navbar {
-        flex-direction: column;
-        align-items: center;
-    } */
-
-    .navbar {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center;    /* Center the links */
-    }
-    
-    .navbar a {
-        padding: 10px 0;  /* Add vertical spacing */
-        font-size: 18px;  /* Adjust font size for smaller screens */
-    }
-    
-
-    #hero-section {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .herop {
-        height: 300px;
-        width: 300px;
-    }
-
-    #about-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #about-section div {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-
-    #contact-section {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    footer {
-        font-size: 12px;
-    }
-}
