@@ -75,8 +75,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 300px;
     padding: 40px;
+    padding-top: 150px;
+}
+
+.typing-effect {
+    display: inline-block;
+    font-family: "Roboto", sans-serif; /* Use your desired font */
+    color: white; /* Text color */
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides the text until it's revealed */
+    border-right: 4px solid rgba(255, 255, 255, 0.75); /* Creates a cursor effect */
+    animation: typing 3.5s steps(20) 1s 1 normal both, blink-caret 0.75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0; /* Start with no text */
+    }
+    to {
+        width: 100%; /* Expand the width to reveal the full text */
+    }
+}
+
+/* Blinking cursor */
+@keyframes blink-caret {
+    50% {
+        border-color: transparent; /* Hides the cursor */
+    }
 }
 
 .heroh {
@@ -91,13 +119,28 @@
     height: 400px;
     width: 400px;
     background-size: cover;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
-.name{
-    margin-left: 20px;
-    margin-top: 5px;
+/* .herop {
+    position: relative; 
+    height: 400px; 
+    width: 400px; 
+    overflow: hidden; 
+    border-radius: 10px; 
+} */
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Video covers the container */
+    height: 100%; /* Maintains aspect ratio and fills */
+    object-fit: cover; /* Ensures the video scales properly */
+    border-radius: 10px; /* Keeps the rounded corners */
 }
+
+
 
 
 /* about section  */
@@ -136,7 +179,35 @@
 }
 
 /* project section  */
-
+#project-section{
+    background-color: black;
+    padding-bottom: 50px;
+}
+.portfolio{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+}
+.portfolio-heading{
+    color: white;
+    font-family: "IBM Plex Serif", serif;
+}
+.portfolio-btn{
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.portfolio-btn:hover {
+    color: #555;
+    transform: scale(1.05); 
+}
 /* Contact section  */
 
 #contact-section{
@@ -188,3 +259,31 @@ footer{
     padding: 15px;
 }
 
+/* scroll bar  */
+/* Ensure body and html take up full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Full height for scrollability */
+    overflow-y: scroll; /* Enables vertical scrollbar always */
+    scrollbar-width: thin; /* Modern browsers: makes scrollbar thin */
+    scrollbar-color: #555 #222; /* Custom scrollbar colors */
+}
+
+/* Custom scrollbar styles for Webkit-based browsers */
+html::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+html::-webkit-scrollbar-track {
+    background: #222; /* Scrollbar track background color */
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #555; /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded scrollbar edges */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: #777; /* Lighter thumb color on hover */
+}
